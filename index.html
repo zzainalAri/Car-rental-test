@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Mobil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+
+    <style>
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+        background-color:  #5CB85F;
+        ;
+      }
+
+      .nav-link{
+        color: black;
+      }
+
+      .gradient-background{
+        
+      background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);     
+      background-size: 400%;     
+      animation: animate 10s linear infinite;
+      }
+
+      .carousel-control-prev-icon{
+        background-image: url(public/assets/fi_chevron-left.png);
+      }
+      .carousel-control-next-icon{
+        background-image: url(public/assets/Right\ button.png);
+      }
+    </style>
+</head>
+<body>
+  <div class="container gradient-background">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Zainal AF</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        
+        <li class="nav-item"><a href="#" class="nav-link">Our Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Why Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Testimonial</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Register</a></li>
+      </ul>
+    </header>
+  
+
+    <section id="heroes">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="public/assets/img_car.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Testimonial -->
+   <div class="container">
+    <!-- TItle -->
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">Testimonial</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Berbagai review positif dari para pelanggan kami</p>
+      </div>
+    </div>
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="public/assets/logo.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="public/assets/img_car.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="public/assets/img_car.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
